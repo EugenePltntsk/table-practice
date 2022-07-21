@@ -25,3 +25,24 @@ th {
 td[colspan] {
     background-color: #eee;
 }
+
+.title:hover {
+background-color: chartreuse;
+}
+
+.one:hover {
+    background-color: blueviolet;
+}
+.two:hover {
+    background-color: chocolate;
+}
+
+.three:hover {
+    background-color: darkolivegreen;
+}
+.four:hover {
+    background-color: crimson;
+}
+.five:hover {
+    background-color: crimson;
+}
