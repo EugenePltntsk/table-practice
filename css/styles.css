@@ -1,48 +1,95 @@
-table {
-    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.2);
-    margin: 3rem;
-    font-family: sans-serif;
-    border-collapse: collapse;
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
-caption {
-    font-size: 20px;
-    margin-bottom: 1rem;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-thead {
-    background-color: #555;
-    color: #fff;
+.about__label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: uppercase;
+  
+
+  color: #fcfcfc;
 }
 
-td,
-th {
-    padding: 0.5rem 1rem;
-    border: 1px solid #888;
+.about__title {
+    margin-bottom: 32px;
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+  
+}
+
+.container {
     text-align: center;
+    justify-content: center;
+  background-color: #84a178;
+  padding: 0 15px;
+ 
+  width: 480px;
+  
 }
 
-td[colspan] {
-    background-color: #eee;
+.about__wrapper {
+  margin-bottom: 90px;
 }
 
-.title:hover {
-background-color: chartreuse;
+.about__cow-photo::before {
+  position: relative;
+
+  display: block;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 490px 490px;
+  background-position: center;
+  width: 490px;
+  height: 490px;
+  border-radius: 50%;
+
+  background-color: rgb(76, 216, 44);
 }
 
-.one:hover {
-    background-color: blueviolet;
-}
-.two:hover {
-    background-color: chocolate;
-}
+.about__cow-photo::after {
+  position: absolute;
+  bottom: -20px;
 
-.three:hover {
-    background-color: darkolivegreen;
-}
-.four:hover {
-    background-color: crimson;
-}
-.five:hover {
-    background-color: crimson;
+  display: block;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 490px 490px;
+  background-position: center;
+  width: 490px;
+  height: 490px;
+  border-radius: 50%;
+
+  background-color: rgb(76, 216, 44);
+  background-image: url("../images/cow-main.png");
 }
